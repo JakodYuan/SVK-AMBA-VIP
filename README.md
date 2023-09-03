@@ -808,11 +808,12 @@ port.connect(fifo.analysis_export);
 
 ## Support the project
 
-Donate with Wechat
+⭐ Add GitHub star on this page
+⭐ Donate with Wechat
 
 <img src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230903155559335-1609445798.png" width="30%" height="auto">
 
-Donate with Alipay
+⭐ Donate with Alipay
 
 <img src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230903155803465-862366890.png" width="30%" height="auto">"
 
