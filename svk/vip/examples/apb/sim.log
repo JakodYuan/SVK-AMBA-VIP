@@ -1,0 +1,97 @@
+Command: /home/ydh/amba_vip/svk/vip/examples/apb/./simv +UVM_TESTNAME=apb_sanity -l sim.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Aug  6 16:58 2023
+UVM_INFO /home/ydh/synopsys/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test apb_sanity...
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'apb_test.fsdb'
+*Verdi* : Begin traversing the scope (harness), layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : fsdbDumpon - All FSDB files at 0 ps.
+UVM_INFO ../../../../svk/vip/src/apb/svk_apb_agent.sv(58) @ 0: uvm_test_top.env.apb_sys_env.master[0] [svk_apb_agent] cfg=
+----------------------------------------------------------------------
+Name                 Type                           Size  Value       
+----------------------------------------------------------------------
+master_cfg[0]        svk_apb_agent_cfg              -     @374        
+  work_mode          svk_dec::agent_work_mode_enum  2     MASTER      
+  data_width         integral                       32    'h20        
+  pready_time_out    integral                       32    'h3e8       
+  mem_default_value  svk_dec::default_value_enum    32    DEFAULT_ZERO
+  idle_value         svk_dec::idle_value_enum       32    IDLE_ZERO   
+  work_mode          svk_dec::agent_work_mode_enum  2     MASTER      
+  version            svk_apb_dec::version_enum      32    APB3        
+----------------------------------------------------------------------
+
+UVM_INFO ../../../../svk/vip/src/apb/svk_apb_agent.sv(58) @ 0: uvm_test_top.env.apb_sys_env.slave[0] [svk_apb_agent] cfg=
+----------------------------------------------------------------------
+Name                 Type                           Size  Value       
+----------------------------------------------------------------------
+slave_cfg[0]         svk_apb_agent_cfg              -     @375        
+  work_mode          svk_dec::agent_work_mode_enum  2     SLAVE       
+  data_width         integral                       32    'h20        
+  pready_time_out    integral                       32    'h3e8       
+  mem_default_value  svk_dec::default_value_enum    32    DEFAULT_ZERO
+  idle_value         svk_dec::idle_value_enum       32    IDLE_ZERO   
+  work_mode          svk_dec::agent_work_mode_enum  2     SLAVE       
+  version            svk_apb_dec::version_enum      32    APB3        
+----------------------------------------------------------------------
+
+UVM_INFO ../../../../svk/vip/src/apb/svk_apb_default_master_sequence.sv(129) @ 0: uvm_test_top.env.apb_sys_env.master[0].sqr@@svk_apb_default_master_sequence [svk_apb_default_master_sequence] raise objection .............
+UVM_INFO ../../../../svk/vip/src/apb/svk_apb_default_master_sequence.sv(146) @ 805000: uvm_test_top.env.apb_sys_env.master[0].sqr@@svk_apb_default_master_sequence [svk_apb_default_master_sequence] drop objection .............
+UVM_INFO /home/ydh/synopsys/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 905000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/ydh/synopsys/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 905000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    7
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[svk_apb_agent]     2
+[svk_apb_default_master_sequence]     2
+
+$finish called from file "/home/ydh/synopsys/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time               905000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 905000 ps
+CPU Time:      2.040 seconds;       Data structure size:   1.1Mb
+Sun Aug  6 16:58:03 2023

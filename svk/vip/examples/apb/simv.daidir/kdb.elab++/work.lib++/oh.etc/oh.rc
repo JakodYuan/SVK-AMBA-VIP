@@ -1,0 +1,6 @@
+@elabcom rc file Version 1.0
+[oh]
+invokeDir = /home/ydh/amba_vip/svk/vip/examples/apb
+hostCommand = -lib /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/work -saveLevel -elab /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/kdb -simflow -simdir /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/kdb_libs -top "uvm_custom_install_recording uvm_cust\
+om_install_verdi_recording harness" -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389 -SNPS_ELABCOM -saveElab
+simType = VCS

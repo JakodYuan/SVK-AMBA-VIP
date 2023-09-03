@@ -1,0 +1,45 @@
+/**
+ *  Copyright (C) 2023-2024 JakodYuan. ( JakodYuan@outlook.com )
+ *
+ *  Licensed under the GNU LESSER GENERAL PUBLIC LICENSE, Version 3.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *          http://www.gnu.org/licenses/lgpl.html
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+`ifndef SVK_AHB_IFS__SV
+`define SVK_AHB_IFS__SV
+
+interface svk_ahb_ifs;
+    svk_ahb_if      master[`SVK_AHB_MAX_NUM_MASTER-1:0]();
+    svk_ahb_if      slave[`SVK_AHB_MAX_NUM_SLAVE-1:0]();
+
+    virtual svk_ahb_if master_vif[`SVK_AHB_MAX_NUM_MASTER-1:0];
+    virtual svk_ahb_if slave_vif[`SVK_AHB_MAX_NUM_SLAVE-1:0];
+    genvar i;
+    generate;
+        for(i =0; i<`SVK_AHB_MAX_NUM_MASTER; i=i+1)begin:gen_master
+            initial begin
+                master_vif[i] = master[i];
+            end
+        end
+    endgenerate
+    generate;
+        for(i =0; i<`SVK_AHB_MAX_NUM_SLAVE; i=i+1)begin:gen_slave
+            initial begin
+                slave_vif[i] = slave[i];
+            end
+        end
+    endgenerate
+
+
+endinterface
+
+`endif

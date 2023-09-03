@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/home/ydh/synopsys/vcs/O-2018.09-SP2/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/home/ydh/synopsys/vcs/O-2018.09-SP2/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/home/ydh/synopsys/vcs/O-2018.09-SP2/linux64/lib:/home/ydh/synopsys/vcs/O-2018.09-SP2/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/home/ydh/synopsys/vcs/O-2018.09-SP2/linux64/bin/vcsfind_create_index.exe  -z  "/home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/debug_dump/fsearch/./idents_ESJoqQ.xml.gz" "/home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/debug_dump/fsearch/fsearch.db"

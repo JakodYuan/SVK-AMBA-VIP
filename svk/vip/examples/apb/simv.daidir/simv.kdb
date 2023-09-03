@@ -1,0 +1,20 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/ydh/amba_vip/svk/vip/examples/apb
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=uvm_custom_install_recording uvm_custom_install_verdi_recording harness 
+OPTION=-ssv -ssy 
+ELAB_OPTION=-ssv -ssy 
+ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[vcs]
+RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/elabcomLog ;/home/ydh/synopsys/vcs/O-2018.09-SP2/linux64/bin/elabcom -logdir /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/elabcomLog  -simvdaidir /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir  -lib /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/work  -saveLevel  -elab /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/kdb -simflow -simdir /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/kdb_libs -top 'uvm_custom_install_recording uvm_custom_install_verdi_recording harness' -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/.elabcomReport || echo Fail >& /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/.elabcomReport; \rm -rf /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/work.lib++ /home/ydh/amba_vip/svk/vip/examples/apb/simv.daidir/kdb_libs/ 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a
