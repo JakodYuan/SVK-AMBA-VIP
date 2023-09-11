@@ -1,2 +1,0 @@
-  CREATE_STREAM @0 {NAME:svk_apb_default_master_sequence T:Transactions SCOPE:uvm_test_top.env.apb_sys_env.master[0].sqr STREAM:893}
-  CREATE_STREAM @0 {NAME:svk_apb_default_slave_sequence T:Transactions SCOPE:uvm_test_top.env.apb_sys_env.slave[0].sqr STREAM:896}
