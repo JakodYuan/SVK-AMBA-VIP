@@ -1,7 +1,8 @@
-
-[TOC]
-
 # SVK AMBA VIP User Guide
+
+## Caution
+
+There VIPs WITHOUT ANY WARRANTY. The code are not guaranteed to work on any systems. Any problem please send email to the author(JakodYuan@outlook.com).
 
 ## 1. Run SVK AMBA VIP Example
 
@@ -810,11 +811,10 @@ port.connect(fifo.analysis_export);
 
 ⭐ Add GitHub star on this page
 
-⭐ Donate with Wechat
-
-<img src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230903155559335-1609445798.png" width="30%" height="auto">
-
-⭐ Donate with Alipay
-
-<img src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230903155803465-862366890.png" width="30%" height="auto">"
+⭐ Donate with Wechat/Alipay or by a coffee
+<div>
+<img style="float:left;width:30%;margin-right:5%;" src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230911142753663-2109142163.png">
+</div>
+<img style="width:30%" src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230911142215267-41824733.png">
+</div>
 
