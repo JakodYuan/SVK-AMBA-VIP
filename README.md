@@ -848,11 +848,9 @@ pool.add("*env.axi_sys_env.slave[0].slv_drv*", cb);
 ## Support the project
 
 ⭐ Add GitHub star on this page
+⭐ Donate or by a coffee with Wechat/Alipay
 
-⭐ Donate with Wechat/Alipay or by a coffee
-<div>
-<img style="float:left;width:30%;margin-right:5%;" src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230911142753663-2109142163.png">
-</div>
-<img style="width:30%" src="https://img2023.cnblogs.com/blog/898240/202309/898240-20230911142215267-41824733.png">
-</div>
+[Wechat](https://img2023.cnblogs.com/blog/898240/202309/898240-20230911142753663-2109142163.png)
+[Alipay](https://img2023.cnblogs.com/blog/898240/202309/898240-20230911142215267-41824733.png)
+
 
