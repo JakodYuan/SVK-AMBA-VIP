@@ -2,7 +2,7 @@
 
 ## Caution
 
-There VIPs WITHOUT ANY WARRANTY. The code are not guaranteed to work on any systems. Any problem please send email to the author(JakodYuan@outlook.com).
+There VIPs WITHOUT ANY WARRANTY. The code are not guaranteed to work correctly. Any problem please send email to the author(JakodYuan@outlook.com).
 
 ## 1. Run SVK AMBA VIP Example
 
