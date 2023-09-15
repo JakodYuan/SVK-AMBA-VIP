@@ -6,7 +6,7 @@ There VIPs WITHOUT ANY WARRANTY. The code are not guaranteed to work correctly. 
 
 ## 1. Run SVK AMBA VIP Example
 
-SVK VIP include AXI/AHB/APB, The usage is similar to that of synopsys VIP.
+SVK VIP include AXI/AHB/APB, The usage is similar to Synopsis VIP.
 The file structure is as follows
 ```
 svk--
