@@ -807,18 +807,6 @@ port = axi_sys_env.master[0].get_observed_port();
 port.connect(fifo.analysis_export);
 ```
 
-## Monitor port
-
-VIPs monitor transaction to analysis port, user can call `get_oberseved_port()` to get anaysis port.
-
-```sv
-uvm_tlm_analysis_fifo#(uvm_sequence_item) fifo;
-uvm_analysis_port#(uvm_sequence_item) port;
-
-port = axi_sys_env.master[0].get_observed_port();
-port.connect(fifo.analysis_export);
-```
-
 ## CallBack
 
 at present, only AXI VIP has callback. The base callback class like this.
