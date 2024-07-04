@@ -81,7 +81,7 @@ class svk_axi_transaction extends uvm_sequence_item;
     }
 
     constraint con_id {
-        id <= ({(`SVK_AXI_ID_WIDTH+1){1'b1}} << cfg.id_width) - 1;
+        id <= ~({(`SVK_AXI_ID_WIDTH){1'b1}} << cfg.id_width);
     }
 
     constraint con_wstrb {
@@ -173,14 +173,14 @@ class svk_axi_transaction extends uvm_sequence_item;
     }
 
     constraint con_auser {
-        auser <= ({(`SVK_AXI_USER_WIDTH+1){1'b1}} << cfg.addr_user_width) - 1;
+        auser <= ~({(`SVK_AXI_USER_WIDTH){1'b1}} << cfg.addr_user_width);
     }
 
     constraint con_wuser {
         solve length before wuser;
         wuser.size == length + 1;
         foreach(wuser[i]) {
-            wuser[i] <= ({(`SVK_AXI_USER_WIDTH+1){1'b1}} << cfg.data_user_width) - 1;
+            wuser[i] <= ~({(`SVK_AXI_USER_WIDTH){1'b1}} << cfg.data_user_width);
         }
     }
 
@@ -189,12 +189,12 @@ class svk_axi_transaction extends uvm_sequence_item;
         ruser.size == length + 1;
         foreach(ruser[i]) {
 
-            ruser[i] <= ({(`SVK_AXI_USER_WIDTH+1){1'b1}} << cfg.data_user_width) - 1;
+            ruser[i] <= ~({(`SVK_AXI_USER_WIDTH){1'b1}} << cfg.data_user_width);
         }
     }
 
     constraint con_buser {
-        buser <= ({(`SVK_AXI_RESP_WIDTH+1){1'b1}} << cfg.resp_user_width) - 1;
+        buser <= ~({(`SVK_AXI_RESP_WIDTH){1'b1}} << cfg.resp_user_width);
 
     }
 
@@ -205,7 +205,7 @@ class svk_axi_transaction extends uvm_sequence_item;
     }
 
     constraint con_addr {
-        addr <= ({(`SVK_AXI_ADDR_WIDTH+1){1'b1}} << cfg.addr_width) - 1;
+        addr <= ~({(`SVK_AXI_ADDR_WIDTH){1'b1}} << cfg.addr_width);
         if(burst == svk_axi_dec::BURST_FIXED) {
             (addr[11:0]/(1<<size))*(1<<size) + (1<<size) <= 4096;
         }
@@ -222,7 +222,7 @@ class svk_axi_transaction extends uvm_sequence_item;
             (size == svk_axi_dec::SIZE_1024BIT) -> addr[6:0]   == 7'b0;
         }
         if(lock == svk_axi_dec::EXCLUSIVE) {
-            addr & (({(`SVK_AXI_ADDR_WIDTH+1){1'b1}} << $clog2(2**size * (length+1))) - 1) == 0;
+            addr & (~({(`SVK_AXI_ADDR_WIDTH){1'b1}} << $clog2(2**size * (length+1)))) == 0;
         }
     }
 
